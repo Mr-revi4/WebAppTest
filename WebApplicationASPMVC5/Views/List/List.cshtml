@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h3>Список покупателей</h3>
+    <table>
+        <tr class=" = header">
+            <td><p>Покупатель</p></td>
+            <td><p>Адрес</p></td>
+            <td><p>Дата</p></td>
+        </tr>
+            @foreach(var b in ViewBag.Purchases)
+            {
+                <tr>
+                    <td><p>@b.Person</p></td>
+                    <td><p>b.Address</p></td>
+                    <td><p>b.Date</p></td>
+                </tr>
+            }        
+    </table>    
+</div>
