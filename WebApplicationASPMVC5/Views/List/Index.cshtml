@@ -9,13 +9,13 @@
             <td><p>Адрес</p></td>
             <td><p>Дата</p></td>
         </tr>
-            @foreach(var b in ViewBag.Purchases)
-            {
-                <tr>
-                    <td><p>@b.Person</p></td>
-                    <td><p>b.Address</p></td>
-                    <td><p>b.Date</p></td>
-                </tr>
-            }        
-    </table>    
+        @foreach (var p in ViewBag.Purchases)
+        {
+            <tr>
+                <td><p>@p.Person</p></td>
+                <td><p>@p.Address</p></td>
+                <td><p>@p.Date</p></td>
+            </tr>
+        }
+    </table>
 </div>
