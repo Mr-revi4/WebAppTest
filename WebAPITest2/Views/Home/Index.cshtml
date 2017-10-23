@@ -1,0 +1,16 @@
+﻿<div id="tblSubs" ng-controller="APIController">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Date</th>
+        </tr>
+        <tbody data-ng-repeat="ent in entity">
+            <tr>
+                <td>{{ent.Id}}</td>
+                <td>{{ent.EntityName}}</td>
+                <td>{{ent.DateTime}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>  
